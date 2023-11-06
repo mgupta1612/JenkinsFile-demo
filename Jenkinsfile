@@ -22,5 +22,10 @@ pipeline {
                 sh 'sleep 30'
             }
         }
+        stage('pollingEveryHr') {
+            steps {
+                sh 'date'
+            }
+        }
     }
 }
