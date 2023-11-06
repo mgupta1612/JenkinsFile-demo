@@ -9,7 +9,12 @@ pipeline {
         }
       stage('git_version') {
             steps {
-                echo 'git --version'
+                sh 'git version'
+            }
+        }
+        stage('docker_version') {
+            steps {
+                sh 'docker --version'
             }
         }
     }
