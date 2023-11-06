@@ -17,5 +17,10 @@ pipeline {
                 sh 'docker --version'
             }
         }
+        stage('docker_version') {
+            steps {
+                sh 'sleep 30'
+            }
+        }
     }
 }
